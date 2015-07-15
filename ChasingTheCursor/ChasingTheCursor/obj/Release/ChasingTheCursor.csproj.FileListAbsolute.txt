@@ -1,0 +1,8 @@
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\bin\Release\ChasingTheCursor.exe.config
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\bin\Release\ChasingTheCursor.exe
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\bin\Release\ChasingTheCursor.pdb
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.Main.resources
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.Properties.Resources.resources
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.csproj.GenerateResource.Cache
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.exe
+c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.pdb

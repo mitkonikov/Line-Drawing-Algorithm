@@ -6,3 +6,4 @@ c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCu
 c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.csproj.GenerateResource.Cache
 c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.exe
 c:\users\pcc\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.pdb
+C:\Users\PCC\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.csprojResolveAssemblyReference.cache

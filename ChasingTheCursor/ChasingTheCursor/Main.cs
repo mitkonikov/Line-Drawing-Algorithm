@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,12 +18,15 @@ namespace ChasingTheCursor
         Point preCursor = new Point(0, 0);
         Point cursor = new Point(0, 0);
         Point ball = new Point(350, 350);
+        Point block1 = new Point(130, 0);
+        Point block2 = new Point(150, 120);
         List<Point> ListLine = new List<Point>();
         int step = 0;
         int radius = 15;
         int points = 0;
         int inc = 10;
         int level = 1;
+        int sat = 0;
 
         public Main()
         {
@@ -44,12 +48,31 @@ namespace ChasingTheCursor
 
             try
             {
+                CollisionWithBlock();
                 // Calculate "inc" value by the level
                 if (points == (level * 100))
                 {
                     level++;
                     inc = inc + 2;
+                    block1 = RandomiseBlocks()[0];
+                    block2 = RandomiseBlocks()[1];
                 }
+
+                // Calculate background
+                if (points > 100)
+                {
+                    sat = (points - ((level - 1) * 100)) * 2;
+                }
+                else
+                {
+                    sat = points;
+                }
+                g.FillRectangle(new SolidBrush(Color.FromArgb(255, 255 - (sat + 1), 255 - (sat + 1))), 0, 0, 700, 700 / 2);
+
+                // Render Blocks
+                g.FillRectangle(new SolidBrush(Color.FromArgb(0, 0, 200)), block1.X, block1.Y, 100, 100);
+                g.FillRectangle(new SolidBrush(Color.FromArgb(0, 0, 200)), block2.X, block2.Y, 100, 100);
+
                 // Calculate
                 if (preCursor == cursor)
                 {
@@ -70,10 +93,11 @@ namespace ChasingTheCursor
 
                 preCursor = cursor; // Store this cursor, so the next Timer Tick it can be compared
                 points++;
+                label1.Text = "Points: " + points;
             }
             catch
             {
-                GameOver();
+                CollisionWithBall();
             }
 
             // Draw
@@ -119,22 +143,67 @@ namespace ChasingTheCursor
             }
         }
 
-        private void GameOver()
+        private Point[] RandomiseBlocks()
         {
-            if (Math.Abs(ball.X - cursor.X) < 30 || Math.Abs(ball.Y - cursor.Y) < 30)
+            Point[] points = new Point[2];
+            Random rnd = new Random();
+
+            for (int i = 0; i < points.Length; i++)
             {
-                ChaseTimer.Stop();
-                DialogResult result = MessageBox.Show("Game Over!" + Environment.NewLine + "You have " + points + " points!" + Environment.NewLine + "Do you want to restart?", "Chasing The Cursor!", MessageBoxButtons.YesNo);
-                if (result == System.Windows.Forms.DialogResult.Yes)
+                int x = rnd.Next(0, 200);
+                int y = rnd.Next(0, 200);
+                if (rnd.Next(0, 2) == 0)
                 {
-                    step = 0;
-                    points = 0;
-                    ball = new Point(350, 350);
+                    points[i] = new Point(x, y);
                 }
                 else
                 {
-                    Close();
+                    points[i] = new Point(bmp.Width - x - 50, y);
                 }
+            }
+
+            return points;
+        }
+
+        private void CollisionWithBlock()
+        {
+            Point[] blocks = new Point[2];
+            blocks[0] = block1;
+            blocks[1] = block2;
+
+            foreach (Point p in blocks)
+            {
+                if (cursor.X > p.X && cursor.X < (p.X + 100))
+                {
+                    if (cursor.Y > p.Y && cursor.Y < (p.Y + 100))
+                    {
+                        GameOver();
+                    }
+                }
+            }
+        }
+
+        private void CollisionWithBall()
+        {
+            if (Math.Abs(ball.X - cursor.X) < 30 || Math.Abs(ball.Y - cursor.Y) < 30)
+            {
+                GameOver();
+            }
+        }
+
+        private void GameOver()
+        {
+            ChaseTimer.Stop();
+            DialogResult result = MessageBox.Show("Game Over!" + Environment.NewLine + "You have " + points + " points!" + Environment.NewLine + "Do you want to restart?", "Chasing The Cursor!", MessageBoxButtons.YesNo);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                step = 0;
+                points = 0;
+                ball = new Point(350, 350);
+            }
+            else
+            {
+                Close();
             }
         }
 

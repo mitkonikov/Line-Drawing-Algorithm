@@ -1,0 +1,12 @@
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\bin\Debug\Line-Circle Intercept.exe.config
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\bin\Debug\Line-Circle Intercept.exe
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\bin\Debug\Line-Circle Intercept.pdb
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line-Circle Intercept.csprojResolveAssemblyReference.cache
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line_Circle_Intercept.Form1.resources
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line_Circle_Intercept.Properties.Resources.resources
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line-Circle Intercept.csproj.GenerateResource.Cache
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line-Circle Intercept.exe
+C:\Users\PCC\Desktop\YouTube\POUSA\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line-Circle Intercept.pdb
+C:\work\Line-Drawing-Algorithm\Line-Circle Intercept\Line-Circle Intercept\bin\Debug\Line-Circle Intercept.exe.config
+C:\work\Line-Drawing-Algorithm\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line-Circle Intercept.exe
+C:\work\Line-Drawing-Algorithm\Line-Circle Intercept\Line-Circle Intercept\obj\Debug\Line-Circle Intercept.pdb

@@ -10,3 +10,9 @@ C:\Users\PCC\documents\visual studio 2012\Projects\ChasingTheCursor\ChasingTheCu
 C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\bin\Release\ChasingTheCursor.exe.config
 C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.exe
 C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.pdb
+C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\bin\Release\ChasingTheCursor.exe
+C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\bin\Release\ChasingTheCursor.pdb
+C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.csprojResolveAssemblyReference.cache
+C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.Main.resources
+C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.Properties.Resources.resources
+C:\work\Line-Drawing-Algorithm\ChasingTheCursor\ChasingTheCursor\obj\Release\ChasingTheCursor.csproj.GenerateResource.Cache

@@ -1,5 +1,6 @@
 # Line-Drawing-Algorithm
-A little game for showcasing the Line Drawing Algorithm
+1. A little game for showcasing the Line Drawing Algorithm
+2. The Line Drawing Algorithm helps us to find the intercept between a line and a circle
 
 private IEnumerable<Point> DrawingLine(int x, int y, int x2, int y2)
         {
@@ -36,3 +37,4 @@ private IEnumerable<Point> DrawingLine(int x, int y, int x2, int y2)
                 }
             }
         }
+		
